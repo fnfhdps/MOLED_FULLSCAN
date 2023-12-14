@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E19AFD42-C992-9E58-67F7-B728A497509F}</ProjectGuid>
+    <RootNamespace>FAVION_LIB</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\Euresys\MultiCam\Include;C:\Program Files %28x86%29\Euresys\Open eVision 1.2\Libraries\Include;C:\Program Files\Euresys\Open eVision 1.2\Libraries\Include;C:\Program Files\Euresys\MultiCam\Include;D:\Program Files %28x86%29\Euresys\MultiCam\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_WINDLL;_AFXEXT;-4996;_USE_MATH_DEFINES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\FAVION_LIB.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)\"
+copy /Y ".\$(Configuration)\$(ProjectName).dll" "$(SolutionDir)$(Configuration)\$(ProjectName).dll"
+copy /Y ".\$(Configuration)\$(ProjectName).lib" "$(SolutionDir)$(Configuration)\$(ProjectName).lib"
+mkdir "$(SolutionDir)$(ProjectName)\$(Platform)\"
+copy /Y *.h "$(SolutionDir)$(ProjectName)\$(Platform)\"</Command>
+    </PostBuildEvent>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\FAVION_LIB.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\FAVION_LIB.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <ImportLibrary>$(SolutionDir)$(Configuration)\$(TargetName).lib</ImportLibrary>
+      <AdditionalLibraryDirectories>C:\Program Files %28x86%29\Euresys\MultiCam\Lib;C:\Program Files %28x86%29\Euresys\Open eVision 1.2\Libraries;C:\Program Files\Euresys\Open eVision 1.2\Libraries\Bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_WINDLL;_AFXEXT;%(PreprocessorDefinitions);_USE_MATH_DEFINES</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\FAVION_LIB.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\Euresys\MultiCam\Include;C:\Program Files %28x86%29\Euresys\Open eVision 1.2\Libraries\Include;C:\Program Files\Euresys\Open eVision 1.2\Libraries\Include;C:\Program Files\Euresys\MultiCam\Include;D:\Program Files %28x86%29\Euresys\MultiCam\Include;$(SolutionDir)\FAVION_LIB;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\FAVION_LIB.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\FAVION_LIB.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <ImportLibrary>$(SolutionDir)$(Configuration)\$(TargetName).lib</ImportLibrary>
+      <ModuleDefinitionFile>.\FAVION_LIB.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>C:\Program Files\Euresys\MultiCam\Lib;C:\Program Files\Euresys\Open eVision 1.2\Libraries\Bin;D:\Program Files %28x86%29\Euresys\MultiCam\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\Euresys\Open eVision 1.2\Libraries64\Include;C:\Program Files %28x86%29\Euresys\MultiCam\Include;.\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;WIN64;_DEBUG;_WINDOWS;_WINDLL;_AFXEXT;-4996;_USE_MATH_DEFINES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization>Disabled</Optimization>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <DisableSpecificWarnings>4996;4101;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <WarningLevel>Level1</WarningLevel>
+      <PrecompiledHeaderFile>StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Debug\FAVION_LIB.pch</PrecompiledHeaderOutputFile>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\Program Files\Euresys\Open eVision 1.2\Libraries64;C:\Program Files %28x86%29\Euresys\MultiCam\Lib\amd64;.\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>NotSet</SubSystem>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <HeapReserveSize>
+      </HeapReserveSize>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(SolutionDir)lib\"
+copy /Y ".\$(Configuration)\$(ProjectName).dll" "$(SolutionDir)lib\$(ProjectName).dll"
+copy /Y ".\$(Configuration)\$(ProjectName).dll" "$(SolutionDir)Exe\$(ProjectName).dll"
+copy /Y ".\$(Configuration)\$(ProjectName).lib" "$(SolutionDir)lib\$(ProjectName).lib"
+mkdir "$(SolutionDir)inc\"
+copy /Y *.h "$(SolutionDir)inc\"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;WIN64;_DEBUG;_WINDOWS;_WINDLL;_AFXEXT;-4996;_USE_MATH_DEFINES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\Euresys\Open eVision 1.2\Libraries64\Include;C:\Program Files %28x86%29\Euresys\MultiCam\Include;.\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DisableSpecificWarnings>4996;4101;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\Program Files\Euresys\Open eVision 1.2\Libraries64;C:\Program Files %28x86%29\Euresys\MultiCam\Lib\amd64;.\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(SolutionDir)lib\"
+copy /Y ".\$(Configuration)\$(ProjectName).dll" "$(SolutionDir)lib\$(ProjectName).dll"
+copy /Y ".\$(Configuration)\$(ProjectName).dll" "$(SolutionDir)Exe\$(ProjectName).dll"
+copy /Y ".\$(Configuration)\$(ProjectName).lib" "$(SolutionDir)lib\$(ProjectName).lib"
+mkdir "$(SolutionDir)inc\"
+copy /Y *.h "$(SolutionDir)inc\"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AjinIO.cpp" />
+    <ClCompile Include="CActUtlType.cpp" />
+    <ClCompile Include="clipper.cpp" />
+    <ClCompile Include="CommSerial.cpp" />
+    <ClCompile Include="CommThread.cpp" />
+    <ClCompile Include="CSystemMon.cpp" />
+    <ClCompile Include="FM14xLineDefect.cpp" />
+    <ClCompile Include="FM15xLineDefect.cpp" />
+    <ClCompile Include="FM1xLineDefect.cpp" />
+    <ClCompile Include="FM2xLineDefect.cpp" />
+    <ClCompile Include="FM3xLineDefect.cpp" />
+    <ClCompile Include="LxCircle.cpp" />
+    <ClCompile Include="LxDraw.cpp" />
+    <ClCompile Include="LxDoubleLine.cpp" />
+    <ClCompile Include="Euresys.cpp" />
+    <ClCompile Include="LxPattern.cpp" />
+    <ClCompile Include="LxBoundary.cpp" />
+    <ClCompile Include="LxFitting.cpp" />
+    <ClCompile Include="LxBga.cpp" />
+    <ClCompile Include="LxTemplateMatch.cpp" />
+    <ClCompile Include="LxTrace.cpp" />
+    <ClCompile Include="LxBarCode.cpp" />
+    <ClCompile Include="LxBlob.cpp" />
+    <ClCompile Include="LxEdge.cpp" />
+    <ClCompile Include="LxFileUnit.cpp" />
+    <ClCompile Include="LxFilter.cpp" />
+    <ClCompile Include="LxFind.cpp" />
+    <ClCompile Include="LxGdi.cpp" />
+    <ClCompile Include="LxLine.cpp" />
+    <ClCompile Include="LxLineDefect.cpp" />
+    <ClCompile Include="LxMatch.cpp" />
+    <ClCompile Include="LxMath.cpp" />
+    <ClCompile Include="LxMatrixCode.cpp" />
+    <ClCompile Include="LxPrint.cpp" />
+    <ClCompile Include="LxTimer.cpp" />
+    <ClCompile Include="LxType.cpp" />
+    <ClCompile Include="FAVION_LIB.cpp" />
+    <ClCompile Include="LxOcr.cpp" />
+    <ClCompile Include="Mx.cpp" />
+    <ClCompile Include="Shape.cpp" />
+    <ClCompile Include="StackWalker.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="TheLogger.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\FAVION_LIB.rc2">
+      <FileType>RC</FileType>
+    </CustomBuild>
+    <CustomBuild Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FAVION_LIB.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AjinIO.h" />
+    <ClInclude Include="CActUtlType.h" />
+    <ClInclude Include="clipper.h" />
+    <ClInclude Include="CommSerial.h" />
+    <ClInclude Include="CommThread.h" />
+    <ClInclude Include="CSystemMon.h" />
+    <ClInclude Include="FM14xLineDefect.h" />
+    <ClInclude Include="FM15xLineDefect.h" />
+    <ClInclude Include="FM1xLineDefect.h" />
+    <ClInclude Include="FM2xLineDefect.h" />
+    <ClInclude Include="FM3xLineDefect.h" />
+    <ClInclude Include="LxCircle.h" />
+    <ClInclude Include="LxDraw.h" />
+    <ClInclude Include="LxDoubleLine.h" />
+    <ClInclude Include="Euresys.h" />
+    <ClInclude Include="LxPattern.h" />
+    <ClInclude Include="LxBoundary.h" />
+    <ClInclude Include="LxFitting.h" />
+    <ClInclude Include="LxBga.h" />
+    <ClInclude Include="LxTemplateMatch.h" />
+    <ClInclude Include="LxTrace.h" />
+    <ClInclude Include="LxBarCode.h" />
+    <ClInclude Include="LxBlob.h" />
+    <ClInclude Include="LxEdge.h" />
+    <ClInclude Include="LxFileUnit.h" />
+    <ClInclude Include="LxFilter.h" />
+    <ClInclude Include="LxFind.h" />
+    <ClInclude Include="LxGdi.h" />
+    <ClInclude Include="LxHeader.h" />
+    <ClInclude Include="LxLine.h" />
+    <ClInclude Include="LxLineDefect.h" />
+    <ClInclude Include="LxMatch.h" />
+    <ClInclude Include="LxMath.h" />
+    <ClInclude Include="LxMatrixCode.h" />
+    <ClInclude Include="LxPrint.h" />
+    <ClInclude Include="LxTimer.h" />
+    <ClInclude Include="LxType.h" />
+    <ClInclude Include="LxOcr.h" />
+    <ClInclude Include="Mx.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Shape.h" />
+    <ClInclude Include="StackWalker.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="TheLogger.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="FAVION_LIB.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
