@@ -1,7 +1,0 @@
-; FAVION_LIB.def : Declares the module parameters for the DLL.
-
-LIBRARY      "FAVION_LIB"
-DESCRIPTION  'FAVION_LIB Windows Dynamic Link Library'
-
-EXPORTS
-    ; Explicit exports can go here
